@@ -23,10 +23,12 @@ public class Customer {
 
     public String toString(){
         return String.format(
-                "Customer[id=%d, firstName='%s', lastName='%s', age=%d]",id,firstName,lastName,age);
+                "Customer[id=%d, firstName='%s', lastName='%s', 'age=%d]",id,firstName,lastName,age);
     }
 
     public int getAge() {
         return age;
     }
+    public String getFirstName() {return firstName;}
+    public String getLastName() {return lastName;}
 }
